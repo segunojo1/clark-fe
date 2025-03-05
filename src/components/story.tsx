@@ -76,10 +76,12 @@ export default function AnimatedContent() {
 
         return (
           <motion.div
-            key={index}
-            ref={(el) => (refs.current[index] = el)}
-            className="relative md:text-[27.5px] text-[20px] font-medium transition-all"
-          >
+          key={index}
+          ref={(el) => {
+            refs.current[index] = el; // Assign, but do not return
+          }}
+          className="relative md:text-[27.5px] text-[20px] font-medium transition-all"
+        >
             <motion.span
               initial={{ color: block.initialColor || "#00000074" }}
               animate={index <= activeIndex ? { color: "#000000" } : { color: block.initialColor || "#00000074" }}

@@ -17,8 +17,8 @@ export default function GravityText() {
       trigger: containerRef.current,
       start: "top 40px", // Becomes sticky when reaching 80px from the top
       end: "+=300px", // Ensures it stays sticky longer
-      pin: true, 
-      pinSpacing: false, 
+      pin: true,
+      pinSpacing: false,
     });
 
     // Falling text animation (tilting all in the same direction)
@@ -26,7 +26,7 @@ export default function GravityText() {
       if (el) {
         gsap.fromTo(
           el,
-          { y: -90 * index, opacity: 1, rotate: Math.random() * 40 - 20}, // Start position
+          { y: -90 * index, opacity: 1, rotate: Math.random() * 40 - 20 }, // Start position
           {
             y: 250 + index * 30, // Falls gradually
             opacity: 0,
@@ -54,10 +54,12 @@ export default function GravityText() {
           (text, index) => (
             <div
               key={index}
-              ref={(el) => (itemsRef.current[index] = el)}
+              ref={(el) => {
+                itemsRef.current[index] = el; 
+              }}
               className="absolute flex items-center justify-center bg-white text-[23px]/[120%] font-normal font-satoshi p-3 text-black rounded-[40px] shadow-lg"
               style={{
-                transform: `rotate(0deg)`, // **Starts straight**
+                transform: `rotate(0deg)`,
                 top: `${index * 10}px`,
                 left: `${index % 2 === 0 ? "20%" : "55%"}`,
               }}
