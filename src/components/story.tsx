@@ -13,7 +13,7 @@ export default function AnimatedContent() {
     },
     {
       text: "Not because we hate learning, but because we’ve figured out how to learn smarter.",
-      image1: { src: "/assets/spark.svg", position: "top-[35px] left-[18%] w-30 h-30" },
+      image1: { src: "/assets/spark.svg", position: "md:top-[35px] top-[26px] md:left-[18%] left-[60%] md:w-30 w-[20px] h-[20px] md:h-30" },
     },
     {
       text: "Then we got to college. And suddenly, it was clear—traditional classes just don’t cut it. Real understanding comes from deep reading, late-night cramming, and group study sessions that actually make sense.",
@@ -21,20 +21,20 @@ export default function AnimatedContent() {
     },
     {
       text: "That’s why we built",
-      image1: { src: "/assets/clark_icon.svg", position: "top-[-35px] w-[90px] h-[79px] right-[-76px]" },
+      image1: { src: "/assets/clark_icon.svg", position: "md:top-[-35px] top-[-15px] md:w-[90px] w-[60px] h-[49px] md:h-[79px] right-[-54px] md:right-[-76px]" },
     },
     {
-      text: "A study sidekick that helps you learn faster and smarter. Upload PDFs, chat with AI, collaborate on an infinite whiteboard, and track your progress--al in one place.",
+      text: "A study sidekick that helps you learn faster and smarter. Upload PDFs, chat with AI, collaborate on an infinite whiteboard, and track your progress--all in one place.",
       image1: { src: "/assets/upload-01.svg", position: "top-[0px] right-0 w-[24px] h-[24px]" },
-      image2: { src: "/assets/pointers.svg", position: "top-[37px] right-[30%] w-[123px] h-[52px]" },
+      image2: { src: "/assets/pointers.svg", position: "md:top-[37px] top-[50px] right-[30%] md:w-[123px] w-[103px] md:h-[52px] h-[44px] animate-pulse" },
     },
     {
       text: "Because learning isnt about sitting in a class. Its about understanding, mastering and owning knowledge. And clark makes it effortless",
-      image1: { src: "/assets/clark_icon2.svg", position: "bottom-[0] right-[38%] w-[64px] h-[56px]" },
+      image1: { src: "/assets/clark_icon2.svg", position: "bottom-[7px] md:right-[37%] left-0 md:block hidden md:left-auto md:w-[64px] w-[44px] h-[56px]" },
     },
     {
       text: "Built by students, for students.",
-      image1: { src: "/assets/clark_icon3.svg", position: "bottom-[0px] right-[10px]" },
+      image1: { src: "/assets/clark_icon3.svg", position: "bottom-[0px] right-[3px] md:block hidden" },
       extratext: " — Sheriff, Seyi & Segun from Clark 💙"
     },
   ];
@@ -68,7 +68,7 @@ export default function AnimatedContent() {
   }, [activeIndex]);
 
   return (
-    <div className="flex flex-col items-start gap-12 font-anec max-w-[827px] mt-[45px] relative">
+    <div className="flex flex-col items-start gap-12 font-anec md:max-w-[827px] max-w-[400px] mt-[45px] relative">
       {contentBlocks.map((block, index) => {
         const highlightWords = block.highlight || "";
         const restOfText = block.text.replace(highlightWords, "");
@@ -78,7 +78,7 @@ export default function AnimatedContent() {
           <motion.div
             key={index}
             ref={(el) => (refs.current[index] = el)}
-            className="relative text-[27.5px] font-medium transition-all"
+            className="relative md:text-[27.5px] text-[20px] font-medium transition-all"
           >
             <motion.span
               initial={{ color: block.initialColor || "#00000074" }}
