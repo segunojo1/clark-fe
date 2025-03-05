@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,4 +22,7 @@ body {
 
 .font-american {
   font-family: "MyFont", sans-serif;
+}
+.font-anec{
+  font-family: "Anek Malayalam", sans-serif;
 }
