@@ -13,7 +13,7 @@ export default function AnimatedContent() {
     },
     {
       text: "Not because we hate learning, but because we’ve figured out how to learn smarter.",
-      image1: { src: "/assets/spark.svg", position: "md:top-[35px] top-[26px] md:left-[18%] left-[60%] md:w-30 w-[20px] h-[20px] md:h-30" },
+      image1: { src: "/assets/spark.svg", position: "md:top-[35px] top-[54px] md:left-[18%] left-[20%] md:w-30 w-[20px] h-[20px] md:h-30" },
     },
     {
       text: "Then we got to college. And suddenly, it was clear—traditional classes just don’t cut it. Real understanding comes from deep reading, late-night cramming, and group study sessions that actually make sense.",
@@ -68,7 +68,7 @@ export default function AnimatedContent() {
   }, [activeIndex]);
 
   return (
-    <div className="flex flex-col items-start gap-12 font-anec md:max-w-[827px] max-w-[400px] mt-[45px] relative">
+    <div className="flex flex-col items-start gap-12 font-anec md:max-w-[827px] max-w-[350px] mt-[45px] relative">
       {contentBlocks.map((block, index) => {
         const highlightWords = block.highlight || "";
         const restOfText = block.text.replace(highlightWords, "");
