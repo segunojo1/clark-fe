@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Collab = () => {
