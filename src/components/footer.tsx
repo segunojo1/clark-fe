@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 import GravityText from './gravity-text'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
         <footer className="text-white bg-[url('/assets/bg.png')] bg-contain bg-black font-satoshi  mt-14 z-[99999] relative pt-[55px] min-h-[100vh] ">
             <Image src='/assets/clarkbtn.svg' alt='clark btn' width={107} height={118} className='md:w-[107px] w-[60px] mx-auto' />
-            <Image src='/assets/clark_icon4.svg' alt='clark icon' width={169} height={151} className='absolute md:w-[169px] w-[100px] md:h-[151px] right-0 top-0' />
+            <Image src='/assets/clark_icon4.svg' alt='clark icon' width={169} height={151} className='absolute  md:w-[169px] w-[100px] md:h-[151px] right-0 top-0' />
 
             <div className="flex flex-col md:flex-row gap-8 justify-between mt-[44px] px-9">
                 {/* Left Side */}
@@ -37,10 +38,10 @@ const Footer = () => {
 
                 <div className='flex flex-col pt-[170px] gap-[39px]'>
                     <p className='text-white md:text-[20px]/[120%] text-[18px] max-w-[380px]'>Transform any topic into organized notes, flashcards, and quizzes—powered by AI. Learn faster, smarter, and on your terms!</p>
-                    <button className='py-2 px-4 text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2 w-fit z-[9999] relative'>
+                    <Link href='/waitlist' className='py-2 px-4 text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2 w-fit z-[9999] relative'>
                         Join the Waitlist
                         <Image src='/assets/clarkbtn.svg' alt='clark btn' width={16} height={17} />
-                    </button>
+                    </Link>
                 </div>
 
                 <ul className='flex flex-col gap-[10px] py-[5px] mt-10 md:mt-0 px-3 items-center text-[13px]/[120%] font-medium md:absolute left-0 right-0 mx-auto w-fit bottom-0 h-fit'>

@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Collab = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -84,10 +85,10 @@ const Collab = () => {
       <Image src="/assets/shadow2.svg" alt="" width={1924} height={603} className="absolute left-0 -bottom-28 right-0 z-[99]" draggable={false} />
 
       {/* Join Button */}
-      <Button className="py-2 px-4 text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2 mx-auto z-[9999] relative">
+      <Link href='/waitlist' className="py-2 px-4 text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2 mx-auto z-[9999] relative">
         Join the Waitlist
         <Image src="/assets/clarkbtn.svg" alt="clark btn" width={16} height={17} />
-      </Button>
+      </Link>
 
       {/* Custom Cursor */}
       {isHovered && (

@@ -16,10 +16,10 @@ const AboutClark = () => {
         <Image src='/assets/edurein.svg' alt='edu reinvented' width={207} height={247} draggable={false} className='w-[207px] h-[247px] rotate-[-6.97deg]' />
       </div>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-5 mt-5 w-fit mx-auto'>
-        <Image src='/assets/card1.svg' alt='All Your Study Materials, All in One Place. Upload PDFs, share YouTube links, and organize your resources with ease.' width={390} height={600} className='md:w-[390px] w-[340px]' draggable={false} />
-        <Image src='/assets/card2.svg' alt='Scan, Summarize, and Learn Faster. Easily scan images, summarize PDFs, and break down YouTube videos into key points.' width={390} height={600} className='md:w-[390px] w-[340px]' draggable={false} />
-        <Image src='/assets/card3.svg' alt='Stay Motivated with Streaks & Rewards. Build a daily habit, unlock achievements, and make learning more fun.' width={390} height={600} className='md:w-[390px] w-[340px]' draggable={false} />
-        <Image src='/assets/card4.svg' alt='Find Your Study Crew. Learn Together. Join or create study groups, upload resources, and keep each other accountable.' width={390} height={600} className='md:w-[390px] w-[340px]' draggable={false} />
+        <Image src='/assets/card1.svg' alt='All Your Study Materials, All in One Place. Upload PDFs, share YouTube links, and organize your resources with ease.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />
+        <Image src='/assets/card2.svg' alt='Scan, Summarize, and Learn Faster. Easily scan images, summarize PDFs, and break down YouTube videos into key points.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />
+        <Image src='/assets/card3.svg' alt='Stay Motivated with Streaks & Rewards. Build a daily habit, unlock achievements, and make learning more fun.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />
+        <Image src='/assets/card4.svg' alt='Find Your Study Crew. Learn Together. Join or create study groups, upload resources, and keep each other accountable.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />
 
       </div>
     </section>
