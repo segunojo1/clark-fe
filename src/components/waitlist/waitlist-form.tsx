@@ -16,6 +16,7 @@ import Image from 'next/image'
 import { WaitlistService } from '@/services/waitlist.services'
 import { useRouter } from 'next/navigation'
 import { waitlistFormDef, waitlistValidationSchema } from '@/models/validations/waitlist.validation'
+import { toast } from 'sonner'
 
 const WaitlistForm = () => {
     const [loading, setLoading] = useState(false);
@@ -38,6 +39,7 @@ const WaitlistForm = () => {
             router.push("/waitlist/success")
         } catch (error) {
             setLoading(false)
+            toast(error.response.data.error)
             console.log(error);
         }
     }
