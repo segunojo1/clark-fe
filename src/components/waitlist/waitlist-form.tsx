@@ -37,7 +37,7 @@ const WaitlistForm = () => {
             await WaitlistService.JoinWaitlist(values);
             setLoading(false);
             router.push("/waitlist/success")
-        } catch (error:unknown) {
+        } catch (error:any) {
             setLoading(false)
             toast(error.response.data.error)
             console.log(error);
