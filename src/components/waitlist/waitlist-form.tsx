@@ -1,4 +1,7 @@
+
 'use client'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import {
@@ -37,6 +40,7 @@ const WaitlistForm = () => {
             await WaitlistService.JoinWaitlist(values);
             setLoading(false);
             router.push("/waitlist/success")
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (error:any) {
             setLoading(false)
             toast(error.response.data.error)
