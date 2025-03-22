@@ -8,12 +8,12 @@ const AboutClark = () => {
       <div className='text-[17px]/[120%] mt-[25px] text-center md:text-start '>ClarkAi brings all your study tools together—AI assistance, quizzes, whiteboards, and progress tracking—so you can learn faster and smarter, without the hassle.</div>
 
       <div className='flex flex-col md:flex-row md:gap-[59px] gap-[20px] items-center  rounded-[20px] h-full border mt-[29px]'>
-        <div className='flex flex-col justify-between min-h-full h-[231px] md:px-14 px-6  pt-3 md:pb-[38px] pb-[20px]'>
+        <div className='flex flex-col justify-between min-h-full h-[390px] md:px-14 px-6  pt-3 md:pb-[38px] pb-[20px]'>
           <h3 className='text-[32px]/[120%] font-bold'>Your AI Study Buddy. Always <span className='relative'>     Ready      <Image src='/assets/line3.svg' alt='' width={84} height={2} draggable={false} className='absolute bottom-[-4px] right-0 left-0' />
           </span>.</h3>
           <p className='text-[20px]/[120%]'>Get instant answers, study tips, and recommendations—whenever you need them.</p>
         </div>
-        <Image src='/assets/edurein.svg' alt='edu reinvented' width={207} height={247} draggable={false} className='w-[207px] h-[247px] rotate-[-6.97deg]' />
+        <Image src='/assets/edurein.svg' alt='edu reinvented' width={207} height={247} draggable={false} className='w-[317px] h-[279px] rotate-[-6.97deg]' />
       </div>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-5 mt-5 w-fit mx-auto'>
         <Image src='/assets/card1.svg' alt='All Your Study Materials, All in One Place. Upload PDFs, share YouTube links, and organize your resources with ease.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />
