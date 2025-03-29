@@ -54,7 +54,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <Image src='/assets/clark_footer.svg' alt='clark footer' width={1496} height={734} className='md:mt-32 mt-14' draggable={false} />
+            <Image src='/assets/clark_footer.svg' alt='clark footer' width={1496} height={734} className='md:mt-32 mt-14 mx-auto' draggable={false} />
 
         </footer>
     )
