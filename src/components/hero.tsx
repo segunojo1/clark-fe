@@ -17,7 +17,7 @@ const Hero = () => {
                 <ul className='font-satoshi absolute bottom-12 mx-auto left-0 right-0 py-[5px] px-4 pr-2 text-[13px]/[120%] bg-black rounded-[36px] text-white flex items-center gap-4 w-fit'>
                     <li>Story</li>
                     <li>Features</li>
-                    <li>Social</li>
+                    <li className='cursor-pointer'><Link href='https://lnk.bio/clarkai'>Social</Link></li>
                     <Link href='/waitlist' className='py-2 px-4 text-[13px]/[120%] bg-[#F14E07] rounded-[23px] flex items-center gap-2'>
                         Join the Waitlist
                         <Image src='/assets/clarkbtn.svg' alt='clark btn' width={16} height={17} />

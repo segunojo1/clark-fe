@@ -18,15 +18,33 @@ const AboutClark = () => {
           <p className='text-[20px]/[120%]'>Get instant answers, study tips, and recommendations—whenever you need them.</p>
         </div>
         <motion.div
-        whileInView={{
-          scale: 1.8
-        }}
-              initial={{ scale: 0}}
-              transition={{ duration: 0.7 }}
-              className="relative z-10"
-            >
-        <Image src='/assets/edurein.svg' alt='edu reinvented' width={207} height={247} draggable={false} className='w-[317px] h-[279px] rotate-[-6.97deg]' />
-      </motion.div>
+  whileInView={{ scale: 1.8 }}
+  initial={{ scale: 0 }}
+  transition={{ duration: 0.7 }}
+  className="relative z-10 md:block hidden" // Hides animation on mobile
+>
+  <Image 
+    src='/assets/edurein.svg' 
+    alt='edu reinvented' 
+    width={207} 
+    height={247} 
+    draggable={false} 
+    className='w-[317px] h-[279px] rotate-[-6.97deg]' 
+  />
+</motion.div>
+
+{/* Static Image for Mobile */}
+<div className="relative z-10 md:hidden">
+  <Image 
+    src='/assets/edurein.svg' 
+    alt='edu reinvented' 
+    width={207} 
+    height={247} 
+    draggable={false} 
+    className='w-[317px] h-[279px] rotate-[-6.97deg]' 
+  />
+</div>
+
       </div>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-5 mt-5 w-fit mx-auto'>
         <Image src='/assets/card1.svg' alt='All Your Study Materials, All in One Place. Upload PDFs, share YouTube links, and organize your resources with ease.' width={390} height={600} className='md:w-[390px] w-[340px] hover:scale-105 transition-all' draggable={false} />

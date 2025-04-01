@@ -99,7 +99,7 @@ const Collab = () => {
             transform: "translate(-50%, -50%)",
           }}
         >
-                  <Image src="/assets/cursor-user.svg" alt="cursor" width={80} height={43} />
+                  <Image src="/assets/orange-cursor.svg" alt="cursor" width={80} height={43} />
 
 
           

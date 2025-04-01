@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Clark",
     images: [
       {
-        url: "https://clarkai.vercel.app/og-image.png", // Replace with your actual image URL
+        url: "https://clarkai.vercel.app/og-image.png", 
         width: 1200,
         height: 630,
         alt: "Clark Preview Image",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ClarkAI - Collaborate, Succeed",
     description: "Clark: AI-powered learning tools for students to collaborate and succeed.",
-    images: ["https://clarkai.vercel.app/og-image.png"], // Replace with your actual image URL
+    images: ["https://clarkai.vercel.app/og-image.png"], 
   },
 };
 
