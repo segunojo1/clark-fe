@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 const AnimatedText = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const shapesRef = useRef<HTMLDivElement[]>([]);
+  const shapesRef = useRef<(HTMLDivElement | null)[]>([]);
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -40,7 +40,9 @@ const AnimatedText = () => {
         {["#000000", "#ffe5e3", "#F14E07"].map((color, index) => (
           <div
             key={index}
-            ref={(el) => (shapesRef.current[index] = el!)}
+            ref={(el) => {
+              shapesRef.current[index] = el;
+            }}
             className="absolute rounded-full"
             style={{
               backgroundColor: color,
