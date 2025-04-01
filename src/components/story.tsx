@@ -13,7 +13,7 @@ export default function AnimatedContent() {
     },
     {
       text: "Not because we hate learning, but because we’ve figured out how to learn smarter.",
-      image1: { src: "/assets/spark.svg", position: "md:top-[35px] top-[54px] md:left-[22%] left-[20%] md:w-[39px] w-[20px] h-[20px] md:h-[25px]" },
+      image1: { src: "/assets/spark.svg", position: "md:top-[35px] top-[54px] md:left-[19%] left-[20%] md:w-[39px] w-[20px] h-[20px] md:h-[25px]" },
     },
     {
       text: "Then we got to college. And suddenly, it was clear—traditional classes just don’t cut it. Real understanding comes from deep reading, late-night cramming, and group study sessions that actually make sense.",
@@ -34,7 +34,7 @@ export default function AnimatedContent() {
     },
     {
       text: "Built by students, for students.",
-      image1: { src: "/assets/clark_icon3.svg", position: "bottom-[0px] right-[-98px] md:block hidden" },
+      image1: { src: "/assets/clark_icon3.svg", position: "bottom-[0px] right-[-90px] md:block hidden" },
       extratext: " — Sheriff, Seyi & Segun from "
     },
   ];

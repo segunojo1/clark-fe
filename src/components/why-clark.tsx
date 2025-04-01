@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import AnimatedStoryContent from './story'
@@ -10,6 +11,8 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import Link from 'next/link'
+import { Typewriter } from 'react-simple-typewriter'
+
 
 
 const WhyClark = () => {
@@ -33,7 +36,7 @@ const WhyClark = () => {
                         </DialogTrigger>
                         <DialogContent className='z-[99999999999] max-w-[500px] p-0 !rounded-[39px]'>
                             <DialogHeader>
-                                <div className='relative'>
+                                <div className='relative  !rounded-[39px]'>
                                     <DialogClose asChild className='absolute top-[24px] right-[35px]'>
                                         <Button type="button" variant="secondary" className='w-[84px] h-[38px] text-[17px] py-[7px] px-[15px] text-[17px]/[auto] font-satoshi bg-white'>
                                             Done
@@ -43,7 +46,13 @@ const WhyClark = () => {
                                 </div>
                                 <div className='p-[20px]'>
                                     <div className='bg-[#F0F0F0] md:py-[27px] py-[18px] md:px-[21px] px-[16px] rounded-[41px] md:text-[17px]/[auto] text-[14px] text-[#6B6B6B] font-satoshi flex flex-col items-start  gap-5'>
-                                        <p>When we got to college, we realized traditional classes don&apos;t cut it—real learning happens through personalized study and collaboration. So we built Clark, your AI-powered study sidekick for effortless learning, collaboration, and progress tracking.</p>
+                                        <Typewriter
+                                            words={['When we got to college, we realized traditional classes don&apos;t cut it—real learning happens through personalized study and collaboration. So we built Clark, your AI-powered study sidekick for effortless learning, collaboration, and progress tracking.']}
+                                            loop={1}
+                                            typeSpeed={30}
+                                            deleteSpeed={50}
+                                            delaySpeed={1000}
+                                        />
                                         <p className='font-bold'>We hope you enjoy using it!</p>
                                         <DialogClose asChild>
                                             <Button type="button" variant="secondary" className='w-fit text-[17px] bg-white'>
