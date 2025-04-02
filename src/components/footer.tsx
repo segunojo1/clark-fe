@@ -45,11 +45,10 @@ const Footer = () => {
                 </div>
 
                 <ul className='flex flex-col gap-[10px] py-[5px] mt-10 md:mt-0 px-3 items-center text-[13px]/[120%] font-medium md:absolute left-0 right-0 mx-auto w-fit bottom-0 h-fit'>
-                    <li>Story</li>
-                    <li>Features</li>
+                <li><Link href='#story'>Story</Link></li>
+                <li><Link href='#features'>Features</Link></li>
                     <li className='cursor-pointer'><Link href='mailto:clarkai.tech@gmail.com'>Contact us</Link></li>
                     <li>About us</li>
-                    <li>Blogs</li>
                     <li className='cursor-pointer'><Link href='https://lnk.bio/clarkai'>Social</Link></li>
                 </ul>
             </div>

@@ -17,7 +17,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const WhyClark = () => {
     return (
-        <div className='flex flex-col items-center px-3 md:px-0'>
+        <div id='story' className='flex flex-col items-center px-3 md:px-0'>
             <div className='flex flex-col gap-[10px] items-center mt-5'>
                 <Image draggable={false} src='/assets/whyclark.png' alt='why clark' width={216} height={26} />
                 <p className='md:text-2xl/[auto] text-[22px] font-bold font-satoshi text-center md:text-start'>We Needed a Better Way to Study...📚</p>

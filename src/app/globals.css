@@ -13,6 +13,9 @@ body {
     --radius: 0.5rem;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: "MyFont";

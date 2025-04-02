@@ -68,7 +68,7 @@ export default function AnimatedContent() {
   }, [activeIndex]);
 
   return (
-    <div className="flex flex-col items-start gap-12 font-anec md:max-w-[827px] max-w-[350px] mt-[45px] relative">
+    <div id="story" className="flex flex-col items-start gap-12 font-anec md:max-w-[827px] max-w-[350px] mt-[45px] relative">
       {contentBlocks.map((block, index) => {
         const highlightWords = block.highlight || "";
         const restOfText = block.text.replace(highlightWords, "");
