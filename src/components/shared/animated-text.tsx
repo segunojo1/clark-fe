@@ -28,7 +28,7 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-[110px] overflow-hidden bg-[#2E302F]">
+    <div className="relative w-screen h-[110px] md:flex hidden overflow-hidden bg-[#2E302F]">
       {/* Cursor */}
       <div
         ref={cursorRef}

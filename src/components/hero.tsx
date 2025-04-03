@@ -11,6 +11,22 @@ const Hero = () => {
                 <Logo />
             </div>
             <AnimatedText />
+            <h1
+          className="font-american md:hidden flex text-[35px] font-semibold text-[#2E302F] text-center md:text-start"
+        >
+          <span className="relative mr-3">
+            Education
+            <Image
+              src="/assets/line4.svg"
+              alt=""
+              width={405}
+              height={1}
+              draggable={false}
+              className="absolute bottom-[-4px] right-0 left-0"
+            />
+          </span>
+          Reinvented
+        </h1>
             <p className='md:text-[18px]/[120%] text-base text-center md:text-start font-medium text-[#474948] max-w-[744px] font-satoshi'>Clark makes learning smarter and easier with AI-powered study tools. Chat with AI, create reading materials, take quizzes, track streaks, and collaborate with friends—all in one place!</p>
             <div className='relative'>
                 <Image src='/assets/exploree.png' alt='explore materials' draggable={false} width={424} height={533} />
