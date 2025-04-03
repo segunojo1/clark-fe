@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +12,24 @@ body {
   :root {
     --radius: 0.5rem;
   }
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/AmericanTypewriter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-american {
+  font-family: "MyFont", sans-serif;
+}
+.font-anec{
+  font-family: "Anek Malayalam", sans-serif;
+}
+.font-satoshi {
+  font-family: "Satoshi", sans-serif;
 }
