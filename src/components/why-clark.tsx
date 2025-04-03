@@ -28,7 +28,7 @@ const WhyClark = () => {
                     Join the Waitlist
                     <Image src='/assets/clarkbtn.svg' alt='clark btn' width={16} height={17} />
                 </Link>
-                <div className='flex items-center gap-[10px] justify-between md:justify-end w-full md:max-w-full max-w-[350px]'>
+                <div className='flex items-center gap-[10px] justify-center md:justify-end w-full md:max-w-full max-w-[350px]'>
                     <p className='text-[18px]/[120%] font-medium'>Too much to read? Let’s </p>
                     <Dialog>
                         <DialogTrigger>
