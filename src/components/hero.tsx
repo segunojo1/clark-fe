@@ -6,13 +6,13 @@ import AnimatedText from './shared/animated-text'
 
 const Hero = () => {
     return (
-        <section className='bg-[#F8F8F8] flex flex-col items-center gap-8 pt-[131px] px-3 md:px-0'>
+        <section className='bg-[#F8F8F8] flex flex-col items-center gap-8 md:pt-[131px] pt-[90px] px-3 md:px-0'>
             <div className='bg-[#F8F8F8] absolute top-0 left-0 right-0 mx-auto w-fit'>
                 <Logo />
             </div>
             <AnimatedText />
             <h1
-          className="font-american md:hidden flex text-[35px] font-semibold text-[#2E302F] text-center md:text-start"
+          className="font-american md:hidden flex text-[29px] font-semibold text-[#2E302F] text-center md:text-start"
         >
           <span className="relative mr-3">
             Education

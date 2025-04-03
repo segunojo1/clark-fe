@@ -24,7 +24,7 @@ const WhyClark = () => {
             </div>
             <AnimatedStoryContent />
             <div className='flex md:flex-row flex-col gap-2 font-satoshi items-center justify-between w-full max-w-[827px] mt-[50px]'>
-                <Link href='/waitlist' className='py-2 px-4 w-[175px] text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2'>
+                <Link href='/waitlist' className='py-2 px-4 md:w-[175px] text-[13px]/[120%] bg-[#F14E07] text-white rounded-[23px] flex items-center gap-2'>
                     Join the Waitlist
                     <Image src='/assets/clarkbtn.svg' alt='clark btn' width={16} height={17} />
                 </Link>
