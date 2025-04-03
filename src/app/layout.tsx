@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://clarkai.vercel.app/og-image.png", 
+        secureUrl: "https://clarkai.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Clark Preview Image",
