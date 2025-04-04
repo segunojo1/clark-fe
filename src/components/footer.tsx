@@ -48,7 +48,6 @@ const Footer = () => {
                 <li><Link href='#story'>Story</Link></li>
                 <li><Link href='#features'>Features</Link></li>
                     <li className='cursor-pointer'><Link href='mailto:clarkai.tech@gmail.com'>Contact us</Link></li>
-                    <li>About us</li>
                     <li className='cursor-pointer'><Link href='https://lnk.bio/clarkai'>Social</Link></li>
                 </ul>
             </div>
