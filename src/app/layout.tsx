@@ -4,6 +4,7 @@ import "./globals.css";
 import NextTopLoader from 'nextjs-toploader';
 import { Toaster } from "@/components/ui/sonner"
 import Head from 'next/head';
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -87,6 +88,7 @@ export default function RootLayout({
         {children}
         <NextTopLoader color="#F14E07"/>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
