@@ -47,7 +47,7 @@ const WhyClark = () => {
                                 <div className='p-[20px]'>
                                     <div className='bg-[#F0F0F0] md:py-[27px] py-[18px] md:px-[21px] px-[16px] rounded-[41px] md:text-[17px]/[auto] text-[14px] text-[#6B6B6B] font-satoshi flex flex-col items-start  gap-5'>
                                         <Typewriter
-                                            words={['When we got to college, we realized traditional classes don&apos;t cut it—real learning happens through personalized study and collaboration. So we built Clark, your AI-powered study sidekick for effortless learning, collaboration, and progress tracking.']}
+                                            words={["When we got to college, we realized traditional classes don't cut it—real learning happens through personalized study and collaboration. So we built Clark, your AI-powered study sidekick for effortless learning, collaboration, and progress tracking."]}
                                             loop={1}
                                             typeSpeed={30}
                                             deleteSpeed={50}
