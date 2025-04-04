@@ -34,7 +34,7 @@ export default function AnimatedContent() {
     },
     {
       text: "Built by students, for students.",
-      image1: { src: "/assets/clark_icon3.svg", position: "bottom-[0px] right-[-90px] md:block hidden" },
+      image1: { src: "/assets/clark_icon3.svg", position: "md:bottom-[0px] bottom-[5px] md:right-[-90px] md:w-[100px] w-[50px] right-[-40px] block" },
       extratext: " — Sheriff, Seyi & Segun from "
     },
   ];
